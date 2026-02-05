@@ -5,7 +5,6 @@ interface Props {
 }
 const { title } = Astro.props;
 import "../styles/estilo.css";
-import "../scripts/script.js";
 ---
 
 <html lang="en">
@@ -18,7 +17,7 @@ import "../scripts/script.js";
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
-        <script type="module" src="../scripts/script.js" defer></script>
+        <script src="/scripts/script.js" defer></script>
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
